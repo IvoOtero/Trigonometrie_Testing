@@ -40,17 +40,24 @@ namespace Trigonometrie_Testing
         [Then(@"the result should be (.*)")]
         public void ThenTheResultShouldBe(int result)
         {
-            if (function == "<Sine>" || function == "<Tangent>")
+            if (function == "<Sine>")
             {
-                var expected = 0;
+                
+                var expected = Math.Sin(Math.PI); ;
                 var actual = result;
-                Assert.Equal(expected, actual);
+                Assert.Equal(expected, actual, 5);
             } 
             else if (function == "<Cosine>")
             {
-                var expected = -1;
+                var expected = Math.Cos(Math.PI);
                 var actual = result;
-                Assert.Equal(expected, actual);
+                Assert.Equal(expected, actual, 5);
+            }
+            else if (function == "<Tangent>")
+            {
+                var expected = Math.Tan(Math.PI);
+                var actual = result;
+                Assert.Equal(expected, actual, 5);
             }
         }
     }
