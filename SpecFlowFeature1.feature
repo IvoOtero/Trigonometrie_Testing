@@ -1,7 +1,7 @@
 ﻿Feature: Perform trigonometric funtions
 	As User
 	I want to carry out trigonometic functions on my calculator
-	So that I don´t have to calculate them myself.
+	So that I don´t have to calculate them by myself.
 
 @IvoOtero
 Scenario: Sine

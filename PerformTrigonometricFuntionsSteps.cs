@@ -6,8 +6,7 @@ using Xunit;
 namespace Trigonometrie_Testing
 {
 
-    
-
+  
     [Binding]
     public class PerformTrigonometricFuntionsSteps
     {
